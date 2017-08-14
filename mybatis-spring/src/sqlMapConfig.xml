@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	
+	<!-- 配置别名  包名 查询此包及其子包下所有的类 -->
+	<typeAliases>
+		<package name="com.itheima.mybatis.pojo"/>
+	</typeAliases>
+	
+	<!-- Mapper的位置 
+	前提：扫描包  ：要求Mapper文件 要与接口（同包同名）
+	-->
+	<mappers>
+		<mapper resource="sqlmap/UserMapper.xml"/>
+	</mappers>
+
+</configuration>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间 -->
+<mapper namespace="com.itheima.mybatis.mapper.UserMapper">
+	<!-- 手写Sql语句的地方 -->
+	<!-- 
+	
+	parameterType: 入参的数据类型     Mybatis google java.lang.Integer Integer  
+	parameterMap : 废弃了
+	resultType : 返回值的数据类型
+	 #{} :  ?  
+	 -->
+	<select id="findUserById" parameterType="Integer" resultType="User">
+		select * from user where id = #{v}
+	</select>
+	
+
+
+</mapper>
